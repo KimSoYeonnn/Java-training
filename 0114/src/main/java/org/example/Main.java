@@ -1,17 +1,48 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import org.example.card.Card;
+import org.example.card.CardDeck;
+import org.example.card.CardPattern;
+import org.example.lots.LotsUI;
+import org.example.vending.VM2;
+import org.example.vending.VendingMachine;
+import org.example.vending.VendingUI;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+        Card userCard = CardDeck.INSTANCE.getOne();
+        Card comCard = CardDeck.INSTANCE.getOne();
+
+        System.out.println(userCard);
+        System.out.println(comCard);
+
+//        LotsUI ui = new LotsUI();
+//        ui.startGame();
+
+//        ArrayList<String> list = new ArrayList<>();
+//        list.add("꽝");
+//        list.add("꽝");
+//        list.add("당첨");
+//
+//        Collections.shuffle(list);
+//
+//        System.out.println(list);
+//
+//
+//        //remove(0)
+//        System.out.println(list.remove(0));
+//        System.out.println(list);
+//
+//        System.out.println(list.remove(0));
+//        System.out.println(list);
+//
+//        System.out.println(list.remove(0));
+//        System.out.println(list);
     }
 }
