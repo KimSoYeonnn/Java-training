@@ -7,11 +7,13 @@ import lombok.ToString;
 import java.util.ArrayList;
 
 @Getter
-@ToString
 @Setter
+@ToString
 public class Order {
 
+    //주문번호
     private int ono;
+
     private ArrayList<OrderItem> orderItemList;
 
     public Order(){
@@ -23,6 +25,5 @@ public class Order {
         orderItemList.add(newItem);
 
     }
-
 
 }

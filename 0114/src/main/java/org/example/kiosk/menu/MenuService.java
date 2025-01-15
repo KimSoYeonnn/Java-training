@@ -1,7 +1,10 @@
 package org.example.kiosk.menu;
 
+import lombok.extern.log4j.Log4j2;
+
 import java.util.ArrayList;
 
+@Log4j2
 public enum MenuService {
 
     //주어진 메뉴 데이터들을 제공하는 기능
@@ -23,6 +26,14 @@ public enum MenuService {
 
     //2. 로직잡기
     public ArrayList<Menu> getList(){
+
+        log.trace("trace................");
+        log.debug("debug.............");
+        log.info("info.............");
+        log.warn("warn..............");
+        log.error("error.............");
+        log.fatal("fatal................");
+
         //4. 내용 작성
         return menus;
     }

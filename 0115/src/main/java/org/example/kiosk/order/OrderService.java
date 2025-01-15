@@ -4,10 +4,9 @@ import lombok.extern.log4j.Log4j2;
 
 import java.util.ArrayList;
 
-//주문을 받는 사람
-//주문에 대한 CRUD 처리하는 존재
 @Log4j2
 public enum OrderService {
+
     //몇개나 미리 만들것인가?
     INSTANCE;
 
@@ -33,6 +32,5 @@ public enum OrderService {
 
         return idx;
     }
-
 
 }
