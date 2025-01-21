@@ -23,21 +23,21 @@ public class Server1 {
             Socket clientSocket = serverSocket.accept();
             System.out.println(clientSocket);
 
-//            @Cleanup
-//            OutputStream outputStream = clientSocket.getOutputStream();
-//
-//            //ascii :a
-//            outputStream.write(97);
+            @Cleanup
+            OutputStream outputStream = clientSocket.getOutputStream();
 
-//            @Cleanup
-//            InputStream inputStream = clientSocket.getInputStream();
-//
-//            @Cleanup
-//            Scanner inScanner = new Scanner(inputStream);
-//
-//            String line = inScanner.nextLine();
-//
-//            System.out.println(line);
+            //ascii :a
+            outputStream.write(97);
+
+            @Cleanup
+            InputStream inputStream = clientSocket.getInputStream();
+
+            @Cleanup
+            Scanner inScanner = new Scanner(inputStream);
+
+            String line = inScanner.nextLine();
+
+            System.out.println(line);
 
         }//fir
 
